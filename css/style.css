@@ -1,0 +1,233 @@
+@charset "UTF-8";
+body, html {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+/* Цвета */
+@font-face {
+  font-family: Baloo Bhai;
+  src: url(../fonts/BalooBhai-Regular.ttf);
+}
+
+.button {
+  box-sizing: border-box;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 120px;
+  height: 40px;
+  border: 2px solid #0C0B0B;
+  border-radius: 8px;
+  padding: 12px 0;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 13px;
+  line-height: 15px;
+  color: #0C0B0B;
+  cursor: pointer;
+  margin: 0;
+}
+
+.button--primary:hover {
+  border: 2px solid #2FDAC5;
+  color: #2FDAC5;
+}
+
+.button--secondary {
+  color: #FEFEFE;
+  background-color: #171717;
+}
+
+.button--secondary:hover {
+  background-color: #313131;
+}
+
+.button--tertiary {
+  color: #FEFEFE;
+  background-color: #2FDAC5;
+  border: 2px solid #2FDAC5;
+}
+
+.button--tertiary:hover {
+  background-color: #5ae2d1;
+}
+
+/* Кнопки */
+.btn {
+  display: inline-block;
+  border: 2px solid #171717;
+  border-radius: 8px;
+  background: transparent;
+  color: #171717;
+  font-weight: 700;
+  font-size: 13px;
+  cursor: pointer;
+  /* Цвета кнопки */
+  /* Размеры */
+  /* Кнопка-ссылка */
+}
+
+.btn--black {
+  background-color: #171717;
+  color: #FEFEFE;
+  padding: 0;
+}
+
+.btn--black:hover {
+  background-color: #313131;
+}
+
+.btn--accent {
+  background-color: #2FDAC5;
+  color: #FEFEFE;
+  border: 2px solid #2FDAC5;
+}
+
+.btn--accent:hover {
+  background-color: #5ae2d1;
+}
+
+.btn--default {
+  padding: 13px 22px;
+}
+
+.btn--sm {
+  padding: 13px 15px;
+}
+
+.btn--link {
+  border: 1px solid #171717;
+  padding: 13px 22px;
+}
+
+.navigation {
+  margin: 0;
+  padding: 0;
+}
+
+.navigation-wrapper {
+  margin: 0;
+  padding: 0;
+  position: absolute;
+  left: 0;
+  background: #171717;
+  width: 130px;
+  height: 100vh;
+  border-radius: 0 20px 20px 0;
+  display: grid;
+  grid-template-rows: 1fr 10fr 1fr;
+  justify-content: center;
+  align-content: center;
+  text-align: center;
+}
+
+.navigation__logo-font {
+  margin: 50px 0 100px 0;
+  padding: 0;
+  font-family: Baloo Bhai;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 64px;
+  line-height: 64px;
+  color: #FEFEFE;
+}
+
+.navigation__nav {
+  margin: 0;
+  padding: 0;
+  justify-self: center;
+}
+
+.navigation__list {
+  margin: 0 auto;
+  padding: 0;
+  text-align: center;
+}
+
+.navigation__item {
+  width: 26px;
+  height: 26px;
+  margin: 0;
+  padding: 0 0 65px 0;
+  list-style: none;
+}
+
+.navigation__item-img:hover {
+  border-radius: 2px;
+  border: 2px solid white;
+  background: #2FDAC5;
+}
+
+.navigation__exit {
+  margin-bottom: 50px;
+  width: 100%;
+  height: 26px;
+}
+
+.container {
+  width: 90%;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.container .mix {
+  display: none;
+}
+
+section {
+  margin-top: 90px;
+}
+
+.filter-wrapper {
+  margin: 32px 0 0 200px;
+}
+
+.filter__title {
+  font-family: SF UI Text;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 24px;
+  line-height: 29px;
+  color: #171717;
+}
+
+.filter__blocks {
+  margin-top: 40px;
+  display: flex;
+  flex-direction: column;
+}
+
+.filter__button {
+  font-family: SF UI Text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  opacity: 0.3;
+  color: #171717;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+.filter__button:hover {
+  text-decoration: underline;
+  opacity: 1;
+}
+
+.filter__button:focus {
+  outline: none;
+}
+
+.filter__button--active {
+  opacity: 1;
+  outline: none;
+}
+/*# sourceMappingURL=style.css.map */
