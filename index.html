@@ -1,14 +1,111 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="ru">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>admin panel</title>
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Baloo+Bhai+2&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="css/normalize.css">
     <link rel="stylesheet" href="css/style.css">
 </head>
-<body>
-    
-    
 
+<body>
+    <header class="navigation">
+        <div class="navigation-wrapper">
+            <div class="navigation__logo">
+                <!-- <img src="img/logo.svg" alt="logo"> -->
+                <p class="navigation__logo-font" href="#">F.</p>
+            </div>
+            <nav class="navigation__nav">
+                <ul class="navigation__list">
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            <img class="navigation__item-img" src="img/home-icon.svg" alt="на главную">
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            <img class="navigation__item-img" src="img/learn-icon.svg" alt="на главную">
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            <img class="navigation__item-img" src="img/user-icon.svg" alt="на главную">
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            <img class="navigation__item-img" src="img/mail-icon.svg" alt="на главную">
+                        </a>
+                    </li>
+                    <li class="navigation__item">
+                        <a class="navigation__item-link" href="#">
+                            <img class="navigation__item-img" src="img/options-icon.svg" alt="на главную">
+                        </a>
+                    </li>
+                </ul>
+            </nav>
+
+            <div class="navigation__exit">
+                <a class="navigation__item-link" href="#">
+                    <img class="navigation__item-img" src="img/exit-icon.svg" alt="на главную">
+                </a>
+            </div>
+        </div>
+        <div class="mobile-menu">
+            <nav>
+
+
+            </nav>
+        </div>
+    </header>
+
+    <div class="container">
+        <div class="filter-wrapper">
+            <h2 class="filter__title">Панель администратора</h2>
+    
+            <section>
+                <h3  class="filter__title">Курсы</h3>
+                <div class="controls filter__controls">
+                    <button class="filter filter__button filter__button--active" data-filter="all">Все курсы</button>
+                    <button class="filter filter__button" data-filter=".filter__category1">Новые</button>
+                    <button class="filter filter__button" data-filter=".filter__category2">Самые популярные</button>
+                    <button class="sort filter__button" data-sort="myorder:asc">По возрастанию</button>
+                    <button class="sort filter__button" data-sort="myorder:desc">По убыванию</button>
+                </div>
+
+                <!-- controls -->
+                <div class="filter__blocks">
+                    <div class="mix filter__category1" data-myorder="1">
+                        <div class="card">1</div>
+                    </div>
+                    <div class="mix filter__category2" data-myorder="2">2</div>
+                    <div class="mix filter__category1" data-myorder="3">3</div>
+                    <div class="mix filter__category2" data-myorder="4">4</div>
+                    <div class="mix filter__category1" data-myorder="5">5</div>
+                    <div class="mix filter__category2" data-myorder="6">6</div>
+                </div>
+                
+                <!-- <div class="btn">проба</div>
+                <div class="btn btn--black">проба</div>
+                <div class="btn btn--green">проба</div>
+                <div class="btn btn--default">проба</div>
+                <div class="btn btn--sm">проба</div> -->
+            </section>
+        </div>
+        <!-- filter-wrapper -->
+
+    </div>
+    <!-- container -->
+
+
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
+    <!-- <script src="../js/mixitup.min.js"></script> -->
+    <script src="js/script.js"></script>
 </body>
+
 </html>
