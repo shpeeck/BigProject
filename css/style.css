@@ -1,4 +1,5 @@
 @charset "UTF-8";
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap");
 body, html {
   margin: 0;
   padding: 0;
@@ -9,54 +10,16 @@ body, html {
   box-sizing: border-box;
 }
 
+/* Шрифты */
 /* Цвета */
 @font-face {
   font-family: Baloo Bhai;
-  src: url(../fonts/BalooBhai-Regular.ttf);
+  src: url(../fonts/BalooBhai-Regular.woff);
 }
 
-.button {
-  box-sizing: border-box;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-  width: 120px;
-  height: 40px;
-  border: 2px solid #0C0B0B;
-  border-radius: 8px;
-  padding: 12px 0;
-  font-family: Roboto;
-  font-style: normal;
-  font-weight: bold;
-  font-size: 13px;
-  line-height: 15px;
-  color: #0C0B0B;
-  cursor: pointer;
-  margin: 0;
-}
-
-.button--primary:hover {
-  border: 2px solid #2FDAC5;
-  color: #2FDAC5;
-}
-
-.button--secondary {
-  color: #FEFEFE;
-  background-color: #171717;
-}
-
-.button--secondary:hover {
-  background-color: #313131;
-}
-
-.button--tertiary {
-  color: #FEFEFE;
-  background-color: #2FDAC5;
-  border: 2px solid #2FDAC5;
-}
-
-.button--tertiary:hover {
-  background-color: #5ae2d1;
+@font-face {
+  font-family: SF UI Text;
+  src: url(../fonts/SFUIText-Medium.woff);
 }
 
 /* Кнопки */
@@ -72,6 +35,11 @@ body, html {
   /* Цвета кнопки */
   /* Размеры */
   /* Кнопка-ссылка */
+}
+
+.btn--primary:hover {
+  border-color: #2FDAC5;
+  color: #2FDAC5;
 }
 
 .btn--black {
@@ -92,6 +60,16 @@ body, html {
 
 .btn--accent:hover {
   background-color: #5ae2d1;
+}
+
+.btn--alert {
+  background-color: #D24545;
+  color: #FEFEFE;
+  border: 2px solid #D24545;
+}
+
+.btn--alert:hover {
+  background-color: #dc6e6e;
 }
 
 .btn--default {
@@ -172,7 +150,7 @@ body, html {
 }
 
 .container {
-  width: 90%;
+  width: 100%;
   max-width: 1200px;
   margin: 0 auto;
 }
@@ -186,7 +164,7 @@ section {
 }
 
 .filter-wrapper {
-  margin: 32px 0 0 200px;
+  margin: 32px 0 0 150px;
 }
 
 .filter__title {
@@ -215,6 +193,8 @@ section {
   border: none;
   background: none;
   cursor: pointer;
+  margin: 0;
+  padding: 0 10px 0 0;
 }
 
 .filter__button:hover {
@@ -229,5 +209,89 @@ section {
 .filter__button--active {
   opacity: 1;
   outline: none;
+}
+
+.card {
+  display: grid;
+  grid-template-columns: 1fr 3fr 2fr 3fr 1fr;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.card__btn {
+  box-sizing: border-box;
+  width: 120px;
+  height: 40px;
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  text-decoration: none;
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 700;
+  font-size: 13px;
+  line-height: 15px;
+  text-align: center;
+  margin: 0 5px;
+  padding: 0;
+}
+
+.card__icon {
+  margin-left: 20px;
+  width: 32px;
+  height: 32px;
+}
+
+.card__icon-img {
+  width: auto;
+  height: 100%;
+}
+
+.card__title-top {
+  font-family: SF UI Text;
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 19px;
+  color: #171717;
+  text-decoration: none;
+}
+
+.card__title-top:hover {
+  text-decoration: underline;
+}
+
+.card__title-bottom {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 14px;
+  color: #171717;
+}
+
+.card__clock {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__clock-icon {
+  margin-right: 5px;
+}
+
+.card__rating {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.card__rating-icon {
+  margin-right: 5px;
+}
+
+.card__buttons {
+  display: flex;
+  justify-content: end;
 }
 /*# sourceMappingURL=style.css.map */
