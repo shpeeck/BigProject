@@ -15,14 +15,14 @@
     <header class="navigation">
         <div class="navigation-wrapper">
             <div class="navigation__logo">
-                <!-- <img src="img/logo.svg" alt="logo"> -->
+                <!-- <img src="../img/logo.svg" alt="logo"> -->
                 <p class="navigation__logo-font" href="#">F.</p>
             </div>
             <nav class="navigation__nav">
                 <ul class="navigation__list">
                     <li class="navigation__item">
                         <a class="navigation__item-link" href="#">
-                            <img class="navigation__item-img" src="img/home-icon.svg" alt="на главную">
+                            <img class="navigation__item-img" src=".img/home-icon.svg" alt="на главную">
                         </a>
                     </li>
                     <li class="navigation__item">
@@ -65,29 +65,141 @@
     <div class="container">
         <div class="filter-wrapper">
             <h2 class="filter__title">Панель администратора</h2>
-    
+
             <section>
-                <h3  class="filter__title">Курсы</h3>
+                <h3 class="filter__title">Курсы</h3>
+                <!-- controls -->
                 <div class="controls filter__controls">
                     <button class="filter filter__button filter__button--active" data-filter="all">Все курсы</button>
-                    <button class="filter filter__button" data-filter=".filter__category1">Новые</button>
-                    <button class="filter filter__button" data-filter=".filter__category2">Самые популярные</button>
-                    <button class="sort filter__button" data-sort="myorder:asc">По возрастанию</button>
-                    <button class="sort filter__button" data-sort="myorder:desc">По убыванию</button>
+                    <button class="filter filter__button" data-filter=".filter__new">Новые</button>
+                    <button class="filter filter__button" data-filter=".filter__popular">Самые популярные</button>
+                    <!-- <button class="sort filter__button" data-sort="myorder:asc">По возрастанию</button>
+                    <button class="sort filter__button" data-sort="myorder:desc">По убыванию</button> -->
                 </div>
-
                 <!-- controls -->
                 <div class="filter__blocks">
-                    <div class="mix filter__category1" data-myorder="1">
-                        <div class="card">1</div>
+                    <div class="mix filter__new filter__popular" data-myorder="1">
+                        <div class="card">
+                            <div class="card__icon">
+                                <img class="card__icon-img" src="img/figma-icon.png." alt="">
+                            </div>
+                            <div class="card__title">
+                                <a class="card__title-top" href="#">Figma с нуля</a>
+                                <div class="card__title-bottom">Автор: Christopher Morgan</div>
+                            </div>
+                            <div class="card__clock">
+                                <img class="card__clock-icon" src="img/clock-icon.svg" alt="clock">
+                                <p class="card__clock-time">6ч 30мин</p>
+                            </div>
+                            <div class="card__rating">
+                                <img class="card__rating-icon" src="img/rating-icon.svg" alt="rating">
+                                <p class="card__rating-totall">4,9</p>
+                            </div>
+                            <div class="card__buttons">
+                                <a class="btn btn--default btn--primary card__btn" href="">О курсе</a>
+                                <a class="btn btn--default btn--accent card__btn" href="">Изменить курс</a>
+                                <a class="btn btn--default btn--alert card__btn" href="">Удалить курс</a>
+                            </div>
+                        </div>
                     </div>
-                    <div class="mix filter__category2" data-myorder="2">2</div>
-                    <div class="mix filter__category1" data-myorder="3">3</div>
-                    <div class="mix filter__category2" data-myorder="4">4</div>
-                    <div class="mix filter__category1" data-myorder="5">5</div>
-                    <div class="mix filter__category2" data-myorder="6">6</div>
+                    <div class="mix filter__new" data-myorder="2">
+                        <div class="card">
+                            <div class="card__icon">
+                                <img class="card__icon-img" src="img/foto-icon.png." alt="">
+                            </div>
+                            <div class="card__title">
+                                <a class="card__title-top" href="#">Основы фотографии</a>
+                                <div class="card__title-bottom">Автор: Gordon Norman</div>
+                            </div>
+                            <div class="card__clock">
+                                <img class="card__clock-icon" src="img/clock-icon.svg" alt="clock">
+                                <p class="card__clock-time">3ч 15мин</p>
+                            </div>
+                            <div class="card__rating">
+                                <img class="card__rating-icon" src="img/rating-icon.svg" alt="rating">
+                                <p class="card__rating-totall">4,7</p>
+                            </div>
+                            <div class="card__buttons">
+                                <a class="btn btn--default btn--primary card__btn" href="">О курсе</a>
+                                <a class="btn btn--default btn--accent card__btn" href="">Изменить курс</a>
+                                <a class="btn btn--default btn--alert card__btn" href="">Удалить курс</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix filter__new" data-myorder="3">
+                        <div class="card">
+                            <div class="card__icon">
+                                <img class="card__icon-img" src="img/inst-icon.png." alt="">
+                            </div>
+                            <div class="card__title">
+                                <a class="card__title-top" href="#">photoshop-icon</a>
+                                <div class="card__title-bottom">by David Green</div>
+                            </div>
+                            <div class="card__clock">
+                                <img class="card__clock-icon" src="img/clock-icon.svg" alt="clock">
+                                <p class="card__clock-time">5ч 35мин</p>
+                            </div>
+                            <div class="card__rating">
+                                <img class="card__rating-icon" src="img/rating-icon.svg" alt="rating">
+                                <p class="card__rating-totall">4,6</p>
+                            </div>
+                            <div class="card__buttons">
+                                <a class="btn btn--default btn--primary card__btn" href="">О курсе</a>
+                                <a class="btn btn--default btn--accent card__btn" href="">Изменить курс</a>
+                                <a class="btn btn--default btn--alert card__btn" href="">Удалить курс</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix filter__popular" data-myorder="4">
+                        <div class="card">
+                            <div class="card__icon">
+                                <img class="card__icon-img" src="img/pen-icon.png." alt="">
+                            </div>
+                            <div class="card__title">
+                                <a class="card__title-top" href="#">Курсы рисования</a>
+                                <div class="card__title-bottom">by Jean Tate</div>
+                            </div>
+                            <div class="card__clock">
+                                <img class="card__clock-icon" src="img/clock-icon.svg" alt="clock">
+                                <p class="card__clock-time">11ч 30мин</p>
+                            </div>
+                            <div class="card__rating">
+                                <img class="card__rating-icon" src="img/rating-icon.svg" alt="rating">
+                                <p class="card__rating-totall">4,8</p>
+                            </div>
+                            <div class="card__buttons">
+                                <a class="btn btn--default btn--primary card__btn" href="">О курсе</a>
+                                <a class="btn btn--default btn--accent card__btn" href="">Изменить курс</a>
+                                <a class="btn btn--default btn--alert card__btn" href="">Удалить курс</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="mix filter__new" data-myorder="5">
+                        <div class="card">
+                            <div class="card__icon">
+                                <img class="card__icon-img" src="img/photoshop-icon.png." alt="">
+                            </div>
+                            <div class="card__title">
+                                <a class="card__title-top" href="#">Основы Photoshop</a>
+                                <div class="card__title-bottom">by David Green</div>
+                            </div>
+                            <div class="card__clock">
+                                <img class="card__clock-icon" src="/img/clock-icon.svg" alt="clock">
+                                <p class="card__clock-time">5ч 35мин</p>
+                            </div>
+                            <div class="card__rating">
+                                <img class="card__rating-icon" src="img/rating-icon.svg" alt="rating">
+                                <p class="card__rating-totall">4,7</p>
+                            </div>
+                            <div class="card__buttons">
+                                <a class="btn btn--default btn--primary card__btn" href="">О курсе</a>
+                                <a class="btn btn--default btn--accent card__btn" href="">Изменить курс</a>
+                                <a class="btn btn--default btn--alert card__btn" href="">Удалить курс</a>
+                            </div>
+                        </div>
+                    </div>
                 </div>
-                
+
                 <!-- <div class="btn">проба</div>
                 <div class="btn btn--black">проба</div>
                 <div class="btn btn--green">проба</div>
