@@ -12,10 +12,14 @@
 </head>
 
 <body>
+    <div class="mobile-open">
+        <img src="img/hamburger.svg" alt="menu">
+    </div>
+
     <header class="navigation">
         <div class="navigation-wrapper">
             <div class="navigation__logo">
-                <!-- <img src="../img/logo.svg" alt="logo"> -->
+                <!-- <img src="img/logo.svg" alt="logo"> -->
                 <p class="navigation__logo-font" href="#">F.</p>
             </div>
             <nav class="navigation__nav">
@@ -54,19 +58,73 @@
                 </a>
             </div>
         </div>
-        <div class="mobile-menu">
-            <nav>
+        <!-- end navigation-wrapper -->
 
-
+        <!-- mobile-menu -->
+        <div class="mobile-menu ">
+            <div class="mobile-menu__logo">
+                <!-- <img src="img/logo.svg" alt="logo"> -->
+                <p class="mobile-menu__logo-font" href="#">F.</p>
+                <a class="mobile-menu__btn">
+                    <img src="img/exit.svg" alt="exit">
+                </a>
+            </div>
+            <nav class="mobile-menu__nav">
+                <ul class="mobile-menu__list">
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__item-link" href="#">
+                            <img class="mobile-menu__item-img" src="img/home-icon.svg" alt="на главную">
+                            <span class="mobile-menu__name">Главная</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__item-link" href="#">
+                            <img class="mobile-menu__item-img" src="img/learn-icon.svg" alt="на главную">
+                            <span class="mobile-menu__name">Курсы</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__item-link" href="#">
+                            <img class="mobile-menu__item-img" src="img/user-icon.svg" alt="на главную">
+                            <span class="mobile-menu__name">Аккаунт</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__item-link" href="#">
+                            <img class="mobile-menu__item-img" src="img/mail-icon.svg" alt="на главную">
+                            <span class="mobile-menu__name">Оповещения</span>
+                        </a>
+                    </li>
+                    <li class="mobile-menu__item">
+                        <a class="mobile-menu__item-link" href="#">
+                            <img class="mobile-menu__item-img" src="img/options-icon.svg" alt="на главную">
+                            <span class="mobile-menu__name">Настройки</span>
+                        </a>
+                    </li>
+                </ul>
             </nav>
+
+            <!-- <div class="mobile-menu__exit">
+                <a class="mobile-menu__item-link" href="#">
+                    <img class="mobile-menu__item-img" src="img/exit-icon.svg" alt="на главную">
+                </a>
+                <p class="mobile-menu__name">Выйти</p>
+            </div> -->
+            <div class="mobile-menu__exit">
+                <a class="mobile-menu__item-link" href="#">
+                    <img class="mobile-menu__item-img" src="img/exit-icon.svg" alt="на главную">
+                    <span class="mobile-menu__name">Выйти</span>
+                </a>
+            </div>
         </div>
+        <!-- end mobile-menu -->
     </header>
 
     <div class="container">
         <div class="filter-wrapper">
             <h2 class="filter__title">Панель администратора</h2>
 
-            <section>
+            <section class="filter">
                 <h3 class="filter__title">Курсы</h3>
                 <!-- controls -->
                 <div class="controls filter__controls">
@@ -81,7 +139,7 @@
                     <div class="mix filter__new filter__popular" data-myorder="1">
                         <div class="card">
                             <div class="card__icon">
-                                <img class="card__icon-img" src="img/figma-icon.png" alt="">
+                                <img class="card__icon-img" src="img/figma-icon.png." alt="">
                             </div>
                             <div class="card__title">
                                 <a class="card__title-top" href="#">Figma с нуля</a>
@@ -105,7 +163,7 @@
                     <div class="mix filter__new" data-myorder="2">
                         <div class="card">
                             <div class="card__icon">
-                                <img class="card__icon-img" src="img/foto-icon.png" alt="">
+                                <img class="card__icon-img" src="img/foto-icon.png." alt="">
                             </div>
                             <div class="card__title">
                                 <a class="card__title-top" href="#">Основы фотографии</a>
@@ -129,7 +187,7 @@
                     <div class="mix filter__new" data-myorder="3">
                         <div class="card">
                             <div class="card__icon">
-                                <img class="card__icon-img" src="img/inst-icon.png" alt="">
+                                <img class="card__icon-img" src="img/inst-icon.png." alt="">
                             </div>
                             <div class="card__title">
                                 <a class="card__title-top" href="#">photoshop-icon</a>
@@ -153,7 +211,7 @@
                     <div class="mix filter__popular" data-myorder="4">
                         <div class="card">
                             <div class="card__icon">
-                                <img class="card__icon-img" src="img/pen-icon.png" alt="">
+                                <img class="card__icon-img" src="img/pen-icon.png." alt="">
                             </div>
                             <div class="card__title">
                                 <a class="card__title-top" href="#">Курсы рисования</a>
@@ -177,7 +235,7 @@
                     <div class="mix filter__new" data-myorder="5">
                         <div class="card">
                             <div class="card__icon">
-                                <img class="card__icon-img" src="img/photoshop-icon.png" alt="">
+                                <img class="card__icon-img" src="img/photoshop-icon.png." alt="">
                             </div>
                             <div class="card__title">
                                 <a class="card__title-top" href="#">Основы Photoshop</a>
@@ -216,7 +274,7 @@
 
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
     <script src="https://cdn.jsdelivr.net/jquery.mixitup/latest/jquery.mixitup.min.js"></script>
-    <!-- <script src="../js/mixitup.min.js"></script> -->
+    <!-- <script src="js/mixitup.min.js"></script> -->
     <script src="js/script.js"></script>
 </body>
 
