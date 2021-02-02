@@ -1,5 +1,24 @@
 document.addEventListener("DOMContentLoaded",function(){
 
+    // mobile-menu
+    try {
+        mobBtnOpen = document.querySelector(".mobile-open");
+        menu = document.querySelector(".mobile-menu");
+        mobBtnClose = document.querySelector(".mobile-menu__btn");
+
+        mobBtnOpen.addEventListener("click", function () {
+            menu.className += " mobile-menu--active";
+        });
+        mobBtnClose.addEventListener("click", function () {
+            console.log(menu.className);
+            menu.className = "mobile-menu";
+        });
+        
+        
+    } catch (err) {
+        console.log(err);
+    };
+
 // mixitup
     try {
         $(function () {
