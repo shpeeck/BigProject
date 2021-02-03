@@ -94,6 +94,8 @@ body, html {
   padding: 0;
   position: absolute;
   left: 0;
+  top: 0;
+  bottom: 0;
   background: #171717;
   width: 130px;
   height: 100vh;
