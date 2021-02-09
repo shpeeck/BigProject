@@ -129,18 +129,19 @@
                 <h3 class="filter__title">Курсы</h3>
                 <!-- controls -->
                 <div class="controls filter__controls">
-                    <button class="filter filter__button filter__button--active" data-filter="all" aria-label="Кнопка фильтра все курсы">Все курсы</button>
-                    <button class="filter filter__button" data-filter=".filter__new" aria-label="Кнопка фильтра новые курсы">Новые</button>
-                    <button class="filter filter__button" data-filter=".filter__popular" aria-label="Кнопка фильтра популярные курсы">Самые популярные</button>
-                    <!-- <button class="sort filter__button" data-sort="myorder:asc">По возрастанию</button>
-                    <button class="sort filter__button" data-sort="myorder:desc">По убыванию</button> -->
+                    <button class="sort filter__button filter__button--active" data-sort="default:asc"
+                        aria-label="Кнопка фильтра все курсы">Все курсы</button>
+                    <button class="sort filter__button" data-sort="rating:asc"
+                        aria-label="Кнопка фильтра новые курсы">Новые</button>
+                    <button class="sort filter__button" data-sort="myorder:asc"
+                        aria-label="Кнопка фильтра популярные курсы">Самые популярные</button>
                 </div>
                 <!-- controls -->
                 <div class="filter__blocks">
-                    <div class="mix filter__new filter__popular" data-myorder="1">
+                    <div class="mix filter__new filter__popular" data-myorder="4.9" data-rating="6.30">
                         <div class="card">
                             <div class="card__icon">
-                                <img class="card__icon-img" src="img/figma-icon.png" alt="">
+                                <img class="card__icon-img" src="img/figma-icon.png" alt="фигма с нуля">
                             </div>
                             <div class="card__title">
                                 <a class="card__title-top" href="#">Figma с нуля</a>
@@ -157,14 +158,14 @@
                             <div class="card__buttons">
                                 <a class="btn btn--default btn--primary card__btn" href="#" aria-label="Кнопка подробнее">О курсе</a>
                                 <a class="btn btn--default btn--accent card__btn" href="#" aria-label="Кнопка для редактирования курса">Изменить курс</a>
-                                <a class="btn btn--default btn--alert card__btn" href="#"  aria-label="Кнопка для удаления курса">Удалить курс</a>
+                                <a class="btn btn--default btn--alert card__btn" href="#" aria-label="Кнопка для удаления курса">Удалить курс</a>
                             </div>
                         </div>
                     </div>
-                    <div class="mix filter__new" data-myorder="2">
+                    <div class="mix filter__new" data-myorder="4.7"  data-rating="3.15">
                         <div class="card">
                             <div class="card__icon">
-                                <img class="card__icon-img" src="img/foto-icon.png" alt="">
+                                <img class="card__icon-img" src="img/foto-icon.png" alt="основы фотографии">
                             </div>
                             <div class="card__title">
                                 <a class="card__title-top" href="#">Основы фотографии</a>
@@ -185,7 +186,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mix filter__new" data-myorder="3">
+                    <div class="mix filter__new" data-myorder="4.6"  data-rating="5.35">
                         <div class="card">
                             <div class="card__icon">
                                 <img class="card__icon-img" src="img/inst-icon.png" alt="Мастер Instagram">
@@ -209,7 +210,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mix filter__popular" data-myorder="4">
+                    <div class="mix filter__popular" data-myorder="4.8"  data-rating="11.30">
                         <div class="card">
                             <div class="card__icon">
                                 <img class="card__icon-img" src="img/pen-icon.png" alt="курсы рисования">
@@ -233,7 +234,7 @@
                             </div>
                         </div>
                     </div>
-                    <div class="mix filter__new" data-myorder="5">
+                    <div class="mix filter__new" data-myorder="4.7"  data-rating="5.35">
                         <div class="card">
                             <div class="card__icon">
                                 <img class="card__icon-img" src="img/photoshop-icon.png" alt="Основы Photoshop">
@@ -258,12 +259,6 @@
                         </div>
                     </div>
                 </div>
-
-                <!-- <div class="btn">проба</div>
-                <div class="btn btn--black">проба</div>
-                <div class="btn btn--green">проба</div>
-                <div class="btn btn--default">проба</div>
-                <div class="btn btn--sm">проба</div> -->
             </section>
         </div>
         <!-- filter-wrapper -->
